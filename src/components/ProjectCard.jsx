@@ -12,7 +12,7 @@ const ProjectCard = ({ img, techList, title, url }) => {
       </a>
       <div className="capitalize p-8">
         <h2 className="text-2xl font-medium uppercase">{title}</h2>
-        <div className="flex gap-x-4">
+        <div className="flex gap-x-4 flex-wrap">
           {techList.map((list) => {
             return (
               <h6 key={nanoid()} className="uppercase text-slate-600">
